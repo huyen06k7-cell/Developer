@@ -47,6 +47,9 @@
    here is the roothide sdk: [devkit.zip](https://github.com/roothide/libroothide/releases/latest)
 
 
+6. roothide/theos is now compatible with building roothide packages from existing tweak projects that use rootless path macros, there is a warning message to ensure you have read this document and you can define the `DISABLE_ROOTLESS_COMPAT_WARNING` macro to silence the message.
+
+
 7. For more details about roothide, please refer to
    
 - [the difference between roothide and legacy rootless](roothide.md).
