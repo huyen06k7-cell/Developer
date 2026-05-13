@@ -28,6 +28,8 @@
     ```
     ***the `jbroot` API can be used in C/C++/Objective-C/Swift and its fully compatible with building rootful/rootless package***
 
+    ***In Swift project, it's better to use a swift bridging header file for `#include <roothide.h>` instead of using `import roothide` in swift source files. this will ensure your project is compatible with building rootful/rootless, ref to https://theos.dev/docs/swift#:~:text=Objective%2DC%20to%20Swift***
+
  4. Add these `entitlements` to your executable/app to make them work correctly with roothide:
     ```
     <key>platform-application</key>
